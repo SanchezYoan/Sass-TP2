@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "font1";
+  src: url(./../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(./../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "font3";
+  src: url(./../fonts/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=index.css.map */

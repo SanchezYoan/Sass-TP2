@@ -1,0 +1,103 @@
+
+.main {
+    background: $grey3;
+
+    .section1 {
+        padding: 60px;
+
+        .main-head {
+            div {
+                @include center;
+
+            }
+
+            h2 {
+                font-size: 2.8rem;
+            }
+            .plat-img {
+                width: 40px;
+                height: 40px;
+                margin: 40px;
+            }
+            nav ul {
+                display: flex;
+                font-size: 1.5rem ;
+                color: $white;
+                justify-content: space-evenly;
+
+                
+                li {
+                    cursor: pointer;
+                    padding: 0 5px 10px 5px;
+
+                    &:hover {
+                        animation: navanime 0.3s forwards;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .section2 {
+
+        .dish-items {
+            background: $grey1;
+            width: 80%;
+            margin: 0 auto;
+            border-top: 7px solid $green;
+
+            .items-container {
+
+                // margin: 30px;
+
+                ul {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    
+                    .items-left, .items-right {
+                        display: grid;
+                        grid-template-rows: 25% 25% 25% 25%;
+                        margin: 30px;
+                    }
+                    
+                    
+                    li {
+                        
+                        border-bottom: 1px dashed black;
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        .item {
+                            margin: 30px;
+                            display: flex;
+                            align-items: center;
+                            img {
+                                clip-path: circle(50% at 50% 50%);
+                            }
+                            div {
+                            margin-left: 20px;
+                            
+                                span {
+                                    font-size: 1.2rem;
+                                    font-family: $font2;
+                                }
+                                p {
+                                    font-size: 1.3rem;
+                                }
+                                
+                            }
+                        }
+                        h4 {
+                            font-size: 1.4rem;
+                            font-family: $font3;
+                            color: $green;
+                            align-self: center;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}

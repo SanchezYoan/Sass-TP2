@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "allura";
+  src: url(./../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(./../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(./../fonts/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: allura, sans-serif;
+  color: rgb(97, 110, 50);
+}
+
+h3 {
+  font-family: roboto, sans-serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: poppins, sans-serif;
+  text-transform: uppercase;
+}
+
+span, li {
+  font-family: roboto, sans-serif;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.plat-img {
+  width: 30px;
+  height: 30px;
+}
+
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  position: relative;
+  min-height: 100vh;
+}
+header li, header span, header h3, header h4, header p {
+  color: rgb(0, 255, 234);
+}
+header h2 {
+  font-size: 3rem;
+}
+header .nav {
+  margin: 0 100px auto;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  cursor: pointer;
+  padding: 0 5px 10px 5px;
+}
+header nav ul li:hover {
+  animation: navanime 0.5s forwards;
+}
+header nav ul #social {
+  animation: none;
+}
+header nav ul #social a i:hover {
+  animation: socialanime 0.5s forwards;
+}
+header nav ul li a {
+  margin-right: 10px;
+  color: rgb(0, 255, 234);
+}
+@keyframes navanime {
+  to {
+    border-bottom: 3px solid rgb(0, 255, 234);
+    transform: scale(120%);
+  }
+}
+@keyframes socialanime {
+  to {
+    transform: scale(150%);
+  }
+}
+header .welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+header .welcome h1 {
+  font-size: 4rem;
+}
+header .welcome h3 {
+  font-size: 4.5rem;
+  font-family: poppins, sans-serif;
+  transform: translateY(-40%);
+  letter-spacing: 10px;
+}
+header .welcome h4 {
+  margin: 40px;
+  font-family: roboto, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 8px;
+  font-weight: 100;
+}
+
+.chef {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 80vh;
+  background: rgb(238, 235, 235);
+}
+.chef .left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chef .left-part .left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+  border: 1px dashed black;
+}
+.chef .left-part .left-container h2 {
+  font-size: 2.5rem;
+}
+.chef .left-part .left-container h4 {
+  font-size: 1.5rem;
+  transform: translateY(-50%);
+}
+.chef .left-part .left-container .plat-img {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+}
+.chef .left-part .left-container p {
+  font-size: 1.3rem;
+  font-family: roboto, sans-serif;
+  margin: 40px;
+  text-align: center;
+}
+.chef .left-part .left-container #avatar1 {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  width: 10%;
+}
+.chef .left-part .left-container h5 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-family: poppins, sans-serif;
+  font-weight: 200;
+}
+.chef .left-part .left-container span {
+  color: rgb(161, 146, 146);
+}
+.chef .right-part {
+  background: url(../img/store-01.jpg) center/cover;
+}/*# sourceMappingURL=index.css.map */

@@ -5,54 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resto</title>
-    <link rel="stylesheet" href="./layouts/index.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
     <header>
-        <h1>Resto</h1>
-        <nav>
-            <ul class="nav-left">
-                <li>home</li>
-                <li>reservations</li>
-                <li>menu</li>
-                <li>blog</li>
-                <li>pages</li>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <h2>Resto</h2>
+                    <li>home</li>
+                    <li>reservations</li>
+                    <li>menu</li>
+                    <li>blog</li>
+                    <li>pages</li>
                 <li>shop</li>
                 <li>contact</li>
-            </ul>
-            <ul class="nav-right">
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </nav>
+                
+                <li id="social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="welcome">
-            <h2>Welcome to</h2>
+            <h1>Welcome to</h1>
             <h3>the resto</h3>
-            <img src="./img/ic-plate-big.png" alt="Resto">
+            <img class="plat-img" src="./img/ic-plate-big.png" alt="Resto">
             <h4>we serve only the freshest ingredients</h4>
         </div>
-        <div class="chef-cook">
-            <h3>Discover</h3>
-            <h4>our store</h4>
-            <img src="./img/ic-plate-big.png" alt="Resto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tenetur aperiam vitae sed blanditiis eaque dolorum similique? Porro, eos unde non corporis voluptate velit obcaecati quibusdam eum laudantium nesciunt molestiae.</p>
-            <div>
-                <img src="./img/avatar-01.jpg" alt="chef cook resto">
+    </header>
+    <div class="chef">
+        <div class="left-part">
+            <div class="left-container">
+                <h2>Discover</h2>
+                <h4>our store</h4>
+                <img class="plat-img" src="./img/ic-plate.png" alt="Resto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tenetur aperiam vitae sed blanditiis eaque dolorum similique? Porro, eos unde non corporis voluptate velit obcaecati quibusdam eum laudantium nesciunt molestiae.</p>
+                <img id=avatar1 src="./img/avatar-01.jpg" alt="chef cook resto">
                 <h5>Russell Stephens</h5>
                 <span>chef cook</span>
             </div>
-            <img src="./img/store-01.jpg" alt="chef store">
         </div>
-    </header>
+        <div class="right-part">
+        </div>
+    </div>
 
     <main class="main">
         <section class="section1">
             <div class="main-head">
-                <h3>Discover</h3>
-                <img src="./img/ic-plate-big.png" alt="Resto">
+                <h2>Discover</h2>
+                <img class="plat-img" src="./img/ic-plate-big.png" alt="Resto">
                 <nav>
                     <ul>
                         <li>Breakfast</li>
@@ -135,9 +139,9 @@
         </section>
         <section class="section3">
             <div>
-                <h3>Time</h3>
+                <h2>Time</h2>
                 <h4>open</h4>
-                <img src="./img/ic-plate-big.png" alt="">
+                <img class="plat-img" src="./img/ic-plate-big.png" alt="">
                 <span>monday - friday</span>
                 <p>7AM - 11AM (Breakfast)<br>11AM - 10PM (Lunch/Dinner)</p>
 
@@ -148,6 +152,9 @@
             </div>
             <form action="submit">
                 <div>
+                    <h2>Reservation</h2>
+                    <h3>online booking</h3>
+                    <img class="plat-img" src="./img/ic-plate-big.png" alt="">
                     <select>
                         <option value="alone">People</option>
                         <option value="couple">Couple</option>
@@ -166,9 +173,9 @@
         </section>
         <section class="section4">
             <div>
-                <h3>Upcomming</h3>
-                <h4>our event</h4>
-                <img src="./img/ic-plate-big.png" alt="Resto">
+                <h2>Upcomming</h2>
+                <h3>our event</h3>
+                <img class="plat-img" src="./img/ic-plate-big.png" alt="Resto">
             </div>
             <div class="events">
                 <div>
@@ -192,6 +199,31 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div>
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, ducimus a. Quo, quasi nostrum maiores odit, quis totam vel ut in quisquam fugiat iste dolores modi magnam, reprehenderit nisi porro?</p>
+                    <h3>Russel Stephens</h3>
+                    <span>CEO - HeadPassion</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Resto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ab cum illo amet recusandae inventore voluptatem placeat. Unde debitis veniam maiores. Nihil, quae mollitia autem saepe fugit unde repudiandae corrupti.</p>
+                </div>
+                <div>
+                    <label for="newsletter"></label>
+                    <input type="email">
+                    <div>
+                        <label for="">follow us</label>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 
 

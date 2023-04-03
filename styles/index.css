@@ -39,7 +39,6 @@ h3 {
 
 h4 {
   font-family: poppins, sans-serif;
-  text-transform: uppercase;
 }
 
 span {
@@ -67,6 +66,9 @@ header li, header span, header h3, header h4, header p {
 }
 header h2 {
   font-size: 3rem;
+}
+header h4 {
+  text-transform: uppercase;
 }
 header .nav {
   margin: 0px 100px auto;
@@ -212,27 +214,8 @@ header .welcome h4 {
   position: static;
 }
 .main .section1 .main-head nav ul li:hover {
-  animation: navitems 0.2s forwards;
-}
-@keyframes navitems {
-  0% {
-    border-bottom: 1px solid rgb(0, 255, 234);
-  }
-  20% {
-    border-bottom: 2px solid rgb(0, 255, 234);
-  }
-  40% {
-    border-bottom: 3px solid rgb(0, 255, 234);
-  }
-  60% {
-    border-bottom: 4px solid rgb(0, 255, 234);
-  }
-  80% {
-    border-bottom: 5px solid rgb(0, 255, 234);
-  }
-  100% {
-    border-bottom: 6px solid rgb(0, 255, 234);
-  }
+  color: rgb(97, 110, 50);
+  border-bottom: 1px solid rgb(97, 110, 50);
 }
 .main .section2 {
   background: url(../img/bg-menu-01.jpg);
@@ -304,6 +287,7 @@ header .welcome h4 {
 .section3 .left-part h4 {
   font-size: 1.6rem;
   transform: translateY(-50%);
+  text-transform: uppercase;
 }
 .section3 .left-part img {
   margin: 10px;
@@ -349,6 +333,9 @@ header .welcome h4 {
   border: none;
   border-bottom: 3px solid rgb(161, 146, 146);
 }
+.section3 .right-part select:active, .section3 .right-part select:focus, .section3 .right-part input:active, .section3 .right-part input:focus {
+  outline: none;
+}
 .section3 .right-part .submit {
   display: flex;
   flex-direction: column;
@@ -365,4 +352,83 @@ header .welcome h4 {
   border-radius: 150px;
   background: rgb(10, 10, 10);
   color: rgb(0, 255, 234);
+}
+.section3 .right-part .submit input:hover {
+  color: rgb(10, 10, 10);
+  background-color: rgb(0, 255, 234);
+}
+
+.section4 {
+  width: 60%;
+  margin: 0 auto;
+}
+.section4 .head-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .head-event h2 {
+  font-size: 3rem;
+}
+.section4 .head-event h3 {
+  font-size: 3rem;
+  font-family: poppins, sans-serif;
+  transform: translateY(-20%);
+  color: rgb(0, 255, 234);
+}
+.section4 .events {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  font-family: roboto, sans-serif;
+}
+.section4 .events h4 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+.section4 .events p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.section4 .events a {
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: rgb(10, 10, 10);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.section4 .events .left-part {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+.section4 .events .left-part div {
+  margin: 20px;
+  background: rgb(238, 235, 235);
+  display: flex;
+}
+.section4 .events .left-part div img {
+  width: 250px;
+  height: 200px;
+}
+.section4 .events .left-part div .event-txt {
+  display: flex;
+  flex-direction: column;
+}
+.section4 .events .right-part {
+  background: url(../img/event-03.jpg);
+  margin: 40px;
+}
+.section4 .events .right-part div {
+  margin: 20px;
+  background: rgb(238, 235, 235);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .events .right-part div:before {
+  content: "08 July";
 }/*# sourceMappingURL=index.css.map */

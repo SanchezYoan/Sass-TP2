@@ -37,30 +37,10 @@
                     position: static;
 
                     &:hover {
-                        animation: navitems 0.2s forwards;
+                        color: $green;
+                        border-bottom: 1px solid $green;
                     }
                     
-                    @keyframes navitems {
-                        0% {
-                            border-bottom: 1px solid $white;
-                        }
-                        20% {
-                            border-bottom: 2px solid $white;
-                        }
-                        40% {
-                            border-bottom: 3px solid $white;
-                        }
-                        60% {
-                            border-bottom: 4px solid $white;
-                        }
-                        80% {
-                            border-bottom: 5px solid $white;
-                        }
-                        100% {
-                            border-bottom: 6px solid $white;
-                        }
-                        
-                    }
                 }
                 
             }

@@ -4,11 +4,12 @@
 .chef {
     display: grid; 
     grid-template-columns: 50% 50%;
-    height: 50vh;
+    min-height: 55vh;
     background: $grey1;
     
     .left-part {
         @include center;
+        
         .left-container {
             @include center;
             margin: 30px;
@@ -21,6 +22,8 @@
             h4 {
                 font-size: 1.5rem;
                 transform: translateY(-50%);
+                text-transform: uppercase;
+                
             }
             .plat-img {
                 margin-top: 10px;

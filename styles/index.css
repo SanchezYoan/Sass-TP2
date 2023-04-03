@@ -69,7 +69,8 @@ header h2 {
   font-size: 3rem;
 }
 header .nav {
-  margin: 0 100px auto;
+  margin: 0px 100px auto;
+  padding-top: 20px;
 }
 header nav ul {
   display: flex;
@@ -121,7 +122,7 @@ header .welcome h4 {
 .chef {
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 80vh;
+  height: 50vh;
   background: rgb(238, 235, 235);
 }
 .chef .left-part {
@@ -179,6 +180,7 @@ header .welcome h4 {
   background: rgb(32, 30, 30);
 }
 .main .section1 {
+  height: 40vh;
   padding: 60px;
 }
 .main .section1 .main-head div {
@@ -196,6 +198,8 @@ header .welcome h4 {
   margin: 40px;
 }
 .main .section1 .main-head nav ul {
+  width: 60%;
+  margin: 0 auto;
   display: flex;
   font-size: 1.5rem;
   color: rgb(0, 255, 234);
@@ -204,15 +208,41 @@ header .welcome h4 {
 .main .section1 .main-head nav ul li {
   cursor: pointer;
   padding: 0 5px 10px 5px;
+  border-bottom: 1px solid rgb(0, 255, 234);
+  position: static;
 }
 .main .section1 .main-head nav ul li:hover {
-  animation: navanime 0.3s forwards;
+  animation: navitems 0.2s forwards;
+}
+@keyframes navitems {
+  0% {
+    border-bottom: 1px solid rgb(0, 255, 234);
+  }
+  20% {
+    border-bottom: 2px solid rgb(0, 255, 234);
+  }
+  40% {
+    border-bottom: 3px solid rgb(0, 255, 234);
+  }
+  60% {
+    border-bottom: 4px solid rgb(0, 255, 234);
+  }
+  80% {
+    border-bottom: 5px solid rgb(0, 255, 234);
+  }
+  100% {
+    border-bottom: 6px solid rgb(0, 255, 234);
+  }
+}
+.main .section2 {
+  background: url(../img/bg-menu-01.jpg);
 }
 .main .section2 .dish-items {
   background: rgb(238, 235, 235);
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   border-top: 7px solid rgb(97, 110, 50);
+  transform: translateY(-20%);
 }
 .main .section2 .dish-items .items-container ul {
   display: grid;
@@ -252,4 +282,87 @@ header .welcome h4 {
   font-family: roboto, sans-serif;
   color: rgb(97, 110, 50);
   align-self: center;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 60%;
+  margin: 100px auto;
+}
+.section3 .left-part {
+  padding: 50px;
+  background: rgb(10, 10, 10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .left-part h2 {
+  font-size: 3rem;
+}
+.section3 .left-part h4 {
+  font-size: 1.6rem;
+  transform: translateY(-50%);
+}
+.section3 .left-part img {
+  margin: 10px;
+}
+.section3 .left-part span {
+  color: rgb(97, 110, 50);
+  font-family: poppins, sans-serif;
+  font-size: 1.3rem;
+  margin-top: 25px;
+}
+.section3 .left-part h4, .section3 .left-part p {
+  font-family: poppins, sans-serif;
+  color: rgb(0, 255, 234);
+}
+.section3 .left-part p {
+  margin: 20px;
+}
+.section3 .right-part {
+  padding: 100px;
+  background: rgb(238, 235, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .right-part h2 {
+  font-size: 3rem;
+}
+.section3 .right-part h3 {
+  font-size: 2.1rem;
+  font-family: poppins, sans-serif;
+  transform: translateY(-40%);
+}
+.section3 .right-part img {
+  margin: 10px 0 30px;
+}
+.section3 .right-part select, .section3 .right-part input {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+  background: none;
+  width: 200px;
+  border: none;
+  border-bottom: 3px solid rgb(161, 146, 146);
+}
+.section3 .right-part .submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .right-part .submit input {
+  font-family: poppins, sans-serif;
+  padding: 10px 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 1px solid rgb(10, 10, 10);
+  border-radius: 150px;
+  background: rgb(10, 10, 10);
+  color: rgb(0, 255, 234);
 }/*# sourceMappingURL=index.css.map */

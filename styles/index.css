@@ -74,26 +74,37 @@ header .nav {
   margin: 0px 100px auto;
   padding-top: 20px;
 }
-header nav ul {
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav .nav-left {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav ul li {
+header nav .nav-left li {
   cursor: pointer;
-  padding: 0 5px 10px 5px;
+  padding: 0 50px 10px 50px;
   text-transform: uppercase;
 }
-header nav ul li:hover {
+header nav .nav-left li:hover {
   animation: navanime 0.5s forwards;
 }
-header nav ul #social {
-  animation: none;
+@media screen and (max-width: 700px) {
+  header nav .nav-left li {
+    display: none;
+  }
 }
-header nav ul #social a i:hover {
+header nav .nav-right {
+  align-items: center;
+  padding: 0 5px 10px 5px;
+}
+header nav .nav-right #social a i:hover {
   animation: socialanime 0.5s forwards;
 }
-header nav ul li a {
+header nav .nav-right li a {
   margin-right: 10px;
   color: rgb(0, 255, 234);
 }
@@ -183,8 +194,8 @@ header .welcome h4 {
   background: rgb(32, 30, 30);
 }
 .main .section1 {
-  height: 40vh;
-  padding: 60px;
+  height: 58vh;
+  padding-top: 50px;
 }
 .main .section1 .main-head div {
   display: flex;
@@ -226,7 +237,7 @@ header .welcome h4 {
   width: 60%;
   margin: 0 auto;
   border-top: 7px solid rgb(97, 110, 50);
-  transform: translateY(-20%);
+  transform: translateY(-25%);
 }
 .main .section2 .dish-items .items-container ul {
   display: grid;
@@ -270,17 +281,21 @@ header .welcome h4 {
 
 .section3 {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 30% 70%;
   width: 60%;
   margin: 100px auto;
 }
 .section3 .left-part {
-  padding: 50px;
   background: rgb(10, 10, 10);
+}
+.section3 .left-part .left-container {
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-items: center;
+  border: 1px dashed rgb(238, 235, 235);
 }
 .section3 .left-part h2 {
   font-size: 3rem;
@@ -362,6 +377,7 @@ header .welcome h4 {
 .section4 {
   width: 60%;
   margin: 0 auto;
+  padding-bottom: 500px;
 }
 .section4 .head-event {
   display: flex;
@@ -394,7 +410,7 @@ header .welcome h4 {
   letter-spacing: 1px;
 }
 .section4 .events p i:nth-child(2) {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 .section4 .events a {
   text-decoration: none;
@@ -424,6 +440,15 @@ header .welcome h4 {
   height: 200px;
   -webkit-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
           clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+  display: inline-block;
+  position: relative;
+}
+.section4 .events .left-part .left-container .date-container1 .date:before, .section4 .events .left-part .left-container .date-container2 .date:before {
+  content: "08 Juin";
+  color: rgb(10, 10, 10);
+  border: 1px solid grey;
+  position: absolute;
+  top: 40%;
 }
 .section4 .events .left-part .left-container .event-txt {
   margin: 20px;
@@ -436,7 +461,7 @@ header .welcome h4 {
 }
 .section4 .events .right-part .right-container {
   margin: 20px;
-  padding-top: 120px;
+  padding-top: 115px;
   background: rgb(238, 235, 235);
   text-align: center;
   display: flex;
@@ -448,4 +473,97 @@ header .welcome h4 {
 }
 .section4 .events .right-part .right-container a {
   margin: 65px auto 50px;
+}
+
+footer .maps {
+  background: url(../img/gmap.jpg) center/cover;
+}
+footer .maps .chef {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background: rgb(238, 235, 235);
+  margin: 0 auto;
+  transform: translateY(-60%);
+  text-align: center;
+}
+footer .maps .chef img {
+  transform: translateY(-50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  width: 5%;
+  margin: 0 auto;
+}
+footer .maps .chef p {
+  font-size: 1.3rem;
+  font-family: roboto, sans-serif;
+  margin: 20px 100px;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+footer .maps .chef p i {
+  transform: translateY(-50%);
+}
+footer .maps .chef h4 {
+  font-family: roboto, sans-serif;
+  font-size: 2rem;
+  margin: 30px;
+}
+footer .maps .chef span {
+  font-family: roboto, sans-serif;
+  color: rgb(97, 110, 50);
+  font-size: 1.5rem;
+}
+footer .footer {
+  background: url(../img/bg-footer.jpg) center/cover;
+}
+footer .footer .footer-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px;
+}
+footer .footer .footer-container p, footer .footer .footer-container input, footer .footer .footer-container li a {
+  color: rgb(161, 146, 146);
+}
+footer .footer label {
+  color: rgb(0, 255, 234);
+  font-size: 1.2rem;
+  font-family: poppins, sans-serif;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+footer .footer input {
+  width: 50%;
+  background: none;
+  outline: none;
+  border: 1px solid rgb(161, 146, 146);
+  padding: 5px 10px;
+  margin: 10px 0 50px;
+}
+footer .footer .left-part {
+  margin-right: 50px;
+}
+footer .footer .left-part h2 {
+  font-size: 2.5rem;
+}
+footer .footer .left-part p {
+  line-height: 30px;
+  font-family: roboto, sans-serif;
+  text-align: left;
+}
+footer .footer .right-part {
+  margin-left: 50px;
+}
+footer .footer .right-part .email {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer .right-part .social, footer .footer .right-part .social ul {
+  display: flex;
+  align-items: center;
+}
+footer .footer .right-part ul li {
+  margin: 20px;
 }/*# sourceMappingURL=index.css.map */

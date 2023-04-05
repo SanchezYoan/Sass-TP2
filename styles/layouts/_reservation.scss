@@ -2,15 +2,20 @@
 
 .section3 {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
     width: 60%;
     margin: 100px auto;
     
-    
     .left-part {
-        padding: 50px;
+        // margin: 20px;
         background: $black;
-        @include center;
+        
+        .left-container {
+            padding: 50px;
+            @include center;
+            align-items: center;
+            border: 1px dashed $grey1;
+        }
 
         h2 {
             font-size: 3rem;

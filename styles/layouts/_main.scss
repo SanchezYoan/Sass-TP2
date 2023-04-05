@@ -3,13 +3,16 @@
     background: $grey3;
     
     .section1 {
-        height: 40vh;
-        padding: 60px;
+        height: 58vh;
+        padding-top: 50px;
+        
 
         .main-head {
 
+
             div {
                 @include center;
+                
 
             }
 
@@ -56,10 +59,9 @@
             width: 60%;
             margin: 0 auto;
             border-top: 7px solid $green;
-            transform: translateY(-20%);
+            transform: translateY(-25%);
 
             .items-container {
-                // margin: 30px;
 
                 ul {
                     display: grid;

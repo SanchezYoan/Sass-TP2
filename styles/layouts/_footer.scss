@@ -1,0 +1,104 @@
+
+
+footer {
+    .maps {
+        background: url(../img/gmap.jpg) center/cover;
+        .chef {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            background: $grey1;
+            margin: 0 auto;
+            transform: translateY(-60%);
+            text-align: center;
+
+            img {
+                transform: translateY(-50%);
+                clip-path: circle(50% at 50% 50%);
+                width: 5%;
+                margin: 0 auto;
+            }
+            p {
+                font-size: 1.3rem;
+                font-family: $font3;
+                margin: 20px 100px;
+                letter-spacing: 1px;
+                line-height: 50px;
+
+                i {
+                    transform: translateY(-50%);
+                }
+            }
+            
+            h4 {
+                font-family: $font3;
+                font-size: 2rem;
+                margin: 30px;
+            }
+            span {
+                font-family: $font3;
+                color: $green;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .footer {
+        background: url(../img/bg-footer.jpg) center/cover;
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            width: 60%;
+            margin: 0 auto;
+            padding: 50px;
+            p, input, li a {
+                color: $grey2;
+            }
+
+        }
+        label {
+            color: $white;
+            font-size: 1.2rem;
+            font-family: $font2;
+            text-transform: uppercase;
+            margin-right: 10px;
+        }
+        input {
+            width: 50%;
+            background: none;
+            outline: none;
+            border: 1px solid $grey2;
+            padding: 5px 10px;
+            margin: 10px 0 50px;
+        }
+        .left-part {
+            margin-right: 50px;
+            h2 {
+                font-size: 2.5rem;
+            }
+            p {
+                line-height: 30px;
+                font-family: $font3;
+                text-align: left;
+            }
+        }
+        .right-part {
+            margin-left: 50px;
+
+            .email {
+                display: flex;
+                flex-direction: column;
+            }
+            .social, .social ul {
+                display: flex;
+                align-items: center;
+            }
+
+            ul li {
+                margin: 20px;
+            }
+            
+        }
+    }
+}

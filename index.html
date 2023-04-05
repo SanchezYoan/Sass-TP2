@@ -13,20 +13,21 @@
     <header>
         <div class="nav">
             <nav>
-                <ul>
-                    <h2>Resto</h2>
+                <h2>Resto</h2>
+                <ul class="nav-left">
                     <li>home</li>
                     <li>reservations</li>
                     <li>menu</li>
                     <li>blog</li>
                     <li>pages</li>
-                <li>shop</li>
-                <li>contact</li>
-                
-                <li id="social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li>shop</li>
+                    <li>contact</li>
                 </ul>
+                <ul class="nav-right">
+                    <li id="social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
             </nav>
         </div>
         <div class="welcome">
@@ -173,16 +174,18 @@
         </section>
         <section class="section3">
             <div class="left-part">
-                <h2>Time</h2>
-                <h4>open</h4>
-                <img class="plat-img" src="./img/ic-plate.png" alt="">
-                <span>monday - friday</span>
-                <p>7AM - 11AM (Breakfast)<br>11AM - 10PM (Lunch/Dinner)</p>
-
-                <span>saturday / sunday</span>
-                <p>8AM - 1PM (Brunch)<br>1PM - 9PM Lunch/Dinner</p>
-
-                <span>+15 890 979 25 52</span>
+                <div class="left-container">
+                    <h2>Time</h2>
+                    <h4>open</h4>
+                    <img class="plat-img" src="./img/ic-plate.png" alt="">
+                    <span>monday - friday</span>
+                    <p>7AM - 11AM (Breakfast)<br>11AM - 10PM (Lunch/Dinner)</p>
+                    
+                    <span>saturday / sunday</span>
+                    <p>8AM - 1PM (Brunch)<br>1PM - 9PM (Lunch/Dinner)</p>
+                    
+                    <span>+15 890 979 25 52</span>
+                </div>
             </div>
             <div class="right-part">
 
@@ -220,6 +223,7 @@
                 <div class="left-part">
                     <div class="left-container">
                         <div class="date-container1">
+                            <div class="date"></div>
                         </div>
                         <div class="event-txt">
                             <h4>Night Inspirescu Party</h4>
@@ -247,35 +251,39 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div>
-                <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, ducimus a. Quo, quasi nostrum maiores odit, quis totam vel ut in quisquam fugiat iste dolores modi magnam, reprehenderit nisi porro?</p>
-                    <h3>Russel Stephens</h3>
-                    <span>CEO - HeadPassion</span>
-                </div>
+    </main>
+    <footer>
+        <div class="maps">
+            <div class="chef">
+                <img src="./img/avatar-02.jpg" alt="">
+                <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut accusamus repellat, eos aspernatur suscipit doloremque consectetur, voluptas nam deserunt cupiditate autem, mollitia dolor impedit. Animi ducimus iste dolore et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i class="fa-solid fa-quote-right"></i></p>
+                <h4>Russel Stephens</h4>
+                <span>CEO - HeadPassion</span>
             </div>
-            <div>
-                <div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="left-part">
                     <h2>Resto</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ab cum illo amet recusandae inventore voluptatem placeat. Unde debitis veniam maiores. Nihil, quae mollitia autem saepe fugit unde repudiandae corrupti.</p>
                 </div>
-                <div>
-                    <label for="newsletter"></label>
-                    <input type="email">
-                    <div>
-                        <label for="">follow us</label>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <div class="right-part">
+                    <div class="email">
+                        <label for="newsletter">Newsletter</label>
+                        <input type="email" placeholder="Your email adress">
+                    </div>
+                    <div class="social">
+                        <label for="">follow us :</label>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
-    </main>
-
-
-
-    
+        </div>
+    </footer> 
 </body>
 </html>

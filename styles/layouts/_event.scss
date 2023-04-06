@@ -1,0 +1,83 @@
+
+
+
+.section4 {
+    width: 60%;
+    margin: 0 auto;
+    .head-event {
+        @include center;
+
+        h2 {
+            font-size: 3rem;
+        }
+        h3 {
+            font-size: 3rem;
+            font-family: $font2;
+            transform: translateY(-20%);
+            color: $white;
+        }
+    }
+
+    .events {
+
+        display: grid;
+        grid-template-columns: 60% 40%;
+        font-family: $font3;
+    
+        h4 {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            font-weight: lighter;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+
+        }
+        a {
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: $black;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            
+        }
+        .left-part {
+            display: grid;
+            grid-template-rows: 50% 50%;
+
+            div {
+                margin: 20px;
+                background: $grey1;
+                display: flex;
+                img {
+                    width: 250px;
+                    height: 200px;
+                }
+                .event-txt {
+                    display: flex;
+                    flex-direction: column;
+
+                }
+
+                
+            }
+        }
+        .right-part {
+            background: url(../img/event-03.jpg);
+            margin: 40px;
+
+            div {
+                margin: 20px;
+                background: $grey1;
+                text-align: center;
+                @include center;
+
+                &:before {
+                    content:"08 July"
+                }
+            }
+        }
+    }  
+}
